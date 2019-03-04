@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title># 3-20 使用hidden属性</title>
+      <script>
+          var toggleHidden = function() {
+            var elem = document.getElementsById("toggle");
+            if (elem.hasAttribute("hidden")) {
+              elem.removeAttribute("hidden");
+            } else {
+              elem.setAttribute("hidden", "hidden");
+            }
+          }
+     </script>
+    </head>
+    <body>
+       <button onclick="toggleHidden()">Toggle</button>
+       <table>
+        <tr>
+          <th>Name</th>
+          <th>City</th>
+        </tr>
+        <tr>
+          <td>Adam Freeman</td>
+          <td>London</td>
+        </tr>
+        <tr id="toggle" hidden>
+          <td>Joe Smith</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Anne Jones</td>
+          <td>Parise</td>
+        </tr>
+       </table>
+    </body>
+</html>

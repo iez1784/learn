@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>5-21 对象的相等和等同测试</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myData1 = {
+                name: "Adam",
+                weather: "sunny",
+            };
+            var myData2 = {
+                name: "Adam",
+                weather: "sunny",
+            };
+            var myData3 = myData2;
+            var test1 = myData1 == myData2;
+            var test2 = myData2 == myData3;
+            var test3 = mydata1 === myData2;
+            var test4 = myData2 === myData3;
+
+            document.writeln("Test1 ": + test1 + "Test 2:" + test2);
+            document.writeln("Test3 ": + test3 + "Test 4:" + test4);
+          </script>
+        </body>
+</html>
